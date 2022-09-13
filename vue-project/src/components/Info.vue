@@ -1,12 +1,13 @@
 <template>
     <p v-if="esta_trabalhando">Estou trabalhando no momento</p>
     <p v-else>Estou em busca de novas oportunidades</p>
-    <p>Utilizo as seguintes tecnologias</p>
+    <p>Utilizo as seguintes tecnologias para back-end</p>
     <ul>
-        <li>Java</li>
-        <li>React</li>
-        <li>C#</li>
-        <li>Vue.js</li>
+        <li v-for="tecnologia in tecnologias_backend">{{tecnologia}}</li>
+    </ul>
+    <p>Utilizo as seguintes tecnologias para front-end</p>
+    <ul>
+        <li v-for="tecnologia in tecnologias_frontend">{{tecnologia.linguagem}}</li>
     </ul>
     <div>
         <button @click="showEmail">{{textoBotao}}</button>
@@ -26,7 +27,9 @@ export default {
             mostrar_email: false,
             email: "ariane@email.com",
             meu_link: "https://www.google.com/",
-            textoBotao: "Mostrar e-mail"
+            textoBotao: "Mostrar e-mail",
+            tecnologias_backend: ["Javascript", "PHP", "Python"],
+            tecnologias_frontend: [{ id: 1, linguagem: "HTML" }, { id: 2, linguagem: "CSS" }, { id: 3, linguagem: "Vue" }]
         };
     },
     components: { Picture },
