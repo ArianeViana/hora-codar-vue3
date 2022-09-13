@@ -8,17 +8,36 @@
         <li>C#</li>
         <li>Vue.js</li>
     </ul>
-    <p v-show="mandar_email">Mande uma mensagem para: {{email}} </p>
+    <div>
+        <button @click="showEmail">{{textoBotao}}</button>
+    </div>
+    <p v-show="mostrar_email">Mande uma mensagem para: {{email}} </p>
+    <p class="teste">Para acessar meu portfólio <a v-bind:href="meu_link" target="_blank">clique aqui</a></p>
+    <Picture />
 </template>
 
 <script>
+import Picture from './Picture.vue';
 export default {
-    name: 'Info',
+    name: "Info",
     data() {
         return {
             esta_trabalhando: false,
             mostrar_email: false,
-            email: "ariane@email.com"
+            email: "ariane@email.com",
+            meu_link: "https://www.google.com/",
+            textoBotao: "Mostrar e-mail"
+        };
+    },
+    components: { Picture },
+    methods: {
+        showEmail() {
+            this.mostrar_email = !this.mostrar_email
+            if (!this.mostrar_email) {
+                this.textoBotao = "Mostrar e-mail"
+            } else {
+                this.textoBotao = "Esconder e-mail"
+            }
         }
     }
 }
