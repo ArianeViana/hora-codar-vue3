@@ -80,62 +80,13 @@
   "burgers": [
     {
       "nome": "Ariane Viana",
-      "carne": "Veggie burger",
+      "carne": "Maminha",
       "pao": "3 Queijos",
       "opcionais": [
-        "Cheddar",
-        "Cebola roxa",
-        "Tomate"
-      ],
-      "status": "Solicitado",
-      "id": 1
-    },
-    {
-      "nome": "Gustavo Jardim",
-      "carne": "Picanha",
-      "pao": "Parmesão e Orégano",
-      "opcionais": [],
-      "status": "Solicitado",
-      "id": 2
-    },
-    {
-      "nome": "Maria Joaquina",
-      "carne": "Alcatra",
-      "pao": "Italiano Branco",
-      "opcionais": [
-        "Cheddar",
-        "Bacon",
-        "Salame"
-      ],
-      "status": "Solicitado",
-      "id": 3
-    },
-    {
-      "nome": "Carlos Silva",
-      "carne": "Maminha",
-      "pao": "Parmesão e Orégano",
-      "opcionais": [
-        "Tomate",
-        "Salame",
-        "Cebola roxa"
-      ],
-      "status": "Solicitado",
-      "id": 4
-    },
-    {
-      "nome": "Teste",
-      "carne": "Veggie burger",
-      "pao": "Integral",
-      "opcionais": [
-        "Salame",
-        "Cebola roxa",
-        "Pepino",
-        "Tomate",
-        "Cheddar",
         "Bacon"
       ],
-      "status": "Solicitado",
-      "id": 5
+      "status": "Finalizado",
+      "id": 1
     }
   ]
 }
