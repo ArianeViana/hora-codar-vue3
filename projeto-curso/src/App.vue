@@ -41,5 +41,6 @@ h1 {
     font-size: 42px;
     margin-bottom: 30px;
     color: #222;
+    margin-top: 25px;
 }
 </style>
