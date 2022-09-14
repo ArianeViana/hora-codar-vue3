@@ -121,6 +121,21 @@
       ],
       "status": "Solicitado",
       "id": 4
+    },
+    {
+      "nome": "Teste",
+      "carne": "Veggie burger",
+      "pao": "Integral",
+      "opcionais": [
+        "Salame",
+        "Cebola roxa",
+        "Pepino",
+        "Tomate",
+        "Cheddar",
+        "Bacon"
+      ],
+      "status": "Solicitado",
+      "id": 5
     }
   ]
 }
